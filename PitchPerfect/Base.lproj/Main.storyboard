@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="848.18181818181824" y="3.1380753138075317"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="au9-l0-Hoo">
             <objects>
-                <viewController id="XO0-VD-YQi" sceneMemberID="viewController">
+                <viewController id="XO0-VD-YQi" customClass="playSoundsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oga-2d-VJA">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
