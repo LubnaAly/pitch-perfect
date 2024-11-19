@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-NJ-Jrc">
-                                <rect key="frame" x="142" y="564" width="157" height="139"/>
+                                <rect key="frame" x="141.66666666666666" y="564" width="156.99999999999997" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="7ML-nd-Aks"/>
                                     <constraint firstAttribute="width" constant="157" id="urJ-lP-aCj"/>
@@ -32,7 +32,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZ6-sV-mvD"/>
-                                    <segue destination="XO0-VD-YQi" kind="show" id="ifa-WQ-ywN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWG-zI-b4D">
@@ -60,6 +59,7 @@
                         <outlet property="recordButton" destination="wWG-zI-b4D" id="NXG-HS-Odf"/>
                         <outlet property="recordingLabel" destination="UoL-gJ-Kd7" id="d9c-Sx-6te"/>
                         <outlet property="stopRecordingButton" destination="ZBQ-NJ-Jrc" id="DNB-XW-QpX"/>
+                        <segue destination="XO0-VD-YQi" kind="show" identifier="stopRecording" id="TKL-Vx-DRr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
