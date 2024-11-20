@@ -10,7 +10,7 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
-    // MARK: - Properties
+    // MARK: - Outlets
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -19,9 +19,10 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
-     var recordedAudioURL:URL!
-     var audioFile:AVAudioFile!
-     var audioEngine:AVAudioEngine!
+    // MARK: - Properties
+     var recordedAudioURL: URL!
+     var audioFile: AVAudioFile!
+     var audioEngine: AVAudioEngine!
      var audioPlayerNode: AVAudioPlayerNode!
      var stopTimer: Timer!
         
@@ -29,7 +30,7 @@ class PlaySoundsViewController: UIViewController {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
     
-    // MARK: - View LifeCycle Methods
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
@@ -40,7 +41,7 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.notPlaying)
     }
      
-    // MARK: - IBActions
+    // MARK: - Actions
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:

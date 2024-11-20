@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kam-Sg-kND">
-    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoL-gJ-Kd7">
-                                <rect key="frame" x="167" y="499.66666666666669" width="106" height="21.000000000000057"/>
+                                <rect key="frame" x="352" y="561.5" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-NJ-Jrc">
-                                <rect key="frame" x="142.66666666666666" y="564" width="154.99999999999997" height="155"/>
+                                <rect key="frame" x="327.5" y="626" width="155" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="urJ-lP-aCj"/>
                                     <constraint firstAttribute="width" secondItem="ZBQ-NJ-Jrc" secondAttribute="height" id="xjU-Vr-cst"/>
@@ -71,17 +71,17 @@
             <objects>
                 <viewController storyboardIdentifier="PlaySoundsViewController" id="XO0-VD-YQi" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oga-2d-VJA">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LYS-9b-e9U">
-                                <rect key="frame" x="16" y="62" width="408" height="681"/>
+                                <rect key="frame" x="16" y="20" width="778" height="881"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HRX-Vb-M8P">
-                                        <rect key="frame" x="0.0" y="0.0" width="408" height="227"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="778" height="293.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15e-FL-RFP" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="389" height="293.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Slow"/>
                                                 <connections>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3C-KS-1IG" userLabel="Fast Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="389" y="0.0" width="389" height="293.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
                                                 <connections>
@@ -99,10 +99,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="30j-hc-Ton">
-                                        <rect key="frame" x="0.0" y="227" width="408" height="227"/>
+                                        <rect key="frame" x="0.0" y="293.5" width="778" height="294"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-Ea-rSY" userLabel="HighPitch Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="389" height="294"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
                                                 <connections>
@@ -110,7 +110,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-lT-S8w" userLabel="LowPitch Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="389" y="0.0" width="389" height="294"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
                                                 <connections>
@@ -120,10 +120,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8w6-6t-HhX">
-                                        <rect key="frame" x="0.0" y="454" width="408" height="227"/>
+                                        <rect key="frame" x="0.0" y="587.5" width="778" height="293.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-va-kJn" userLabel="Echo Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="389" height="293.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
                                                 <connections>
@@ -131,7 +131,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz4-mn-xUh" userLabel="Reverb Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
+                                                <rect key="frame" x="389" y="0.0" width="389" height="293.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
                                                 <connections>
@@ -143,7 +143,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-aa-s51" userLabel="Stop Button">
-                                <rect key="frame" x="142.66666666666666" y="751" width="154.99999999999997" height="155"/>
+                                <rect key="frame" x="327.5" y="909" width="155" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="HhC-mY-k2C"/>
                                     <constraint firstAttribute="width" secondItem="fmI-aa-s51" secondAttribute="height" id="Mbb-sb-IBG"/>
@@ -187,7 +187,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kam-Sg-kND" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohl-Vm-gjz">
-                        <rect key="frame" x="0.0" y="62" width="440" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="810" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
