@@ -42,7 +42,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
      }
 }
 
-// MARK: - extensions
+// MARK: - Extension
 extension RecordSoundsViewController {
     
     // MARK: - UI Configuration
