@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kam-Sg-kND">
     <device id="retina6_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,10 +24,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-NJ-Jrc">
-                                <rect key="frame" x="141.66666666666666" y="564" width="156.99999999999997" height="139"/>
+                                <rect key="frame" x="142.66666666666666" y="564" width="154.99999999999997" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="139" id="7ML-nd-Aks"/>
-                                    <constraint firstAttribute="width" constant="157" id="urJ-lP-aCj"/>
+                                    <constraint firstAttribute="width" constant="155" id="urJ-lP-aCj"/>
+                                    <constraint firstAttribute="width" secondItem="ZBQ-NJ-Jrc" secondAttribute="height" id="xjU-Vr-cst"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Stop"/>
@@ -74,13 +75,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LYS-9b-e9U">
-                                <rect key="frame" x="16" y="62" width="408" height="772"/>
+                                <rect key="frame" x="16" y="62" width="408" height="681"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HRX-Vb-M8P">
-                                        <rect key="frame" x="0.0" y="0.0" width="408" height="257.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="227"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15e-FL-RFP" userLabel="Slow Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Slow"/>
                                                 <connections>
@@ -88,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3C-KS-1IG" userLabel="Fast Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
                                                 <connections>
@@ -98,10 +99,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="30j-hc-Ton">
-                                        <rect key="frame" x="0.0" y="257.33333333333337" width="408" height="257.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="227" width="408" height="227"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-Ea-rSY" userLabel="HighPitch Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
                                                 <connections>
@@ -109,7 +110,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-lT-S8w" userLabel="LowPitch Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
                                                 <connections>
@@ -119,10 +120,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8w6-6t-HhX">
-                                        <rect key="frame" x="0.0" y="514.66666666666663" width="408" height="257.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="454" width="408" height="227"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-va-kJn" userLabel="Echo Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
                                                 <connections>
@@ -130,7 +131,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz4-mn-xUh" userLabel="Reverb Button">
-                                                <rect key="frame" x="204" y="0.0" width="204" height="257.33333333333331"/>
+                                                <rect key="frame" x="204" y="0.0" width="204" height="227"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
                                                 <connections>
@@ -142,10 +143,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-aa-s51" userLabel="Stop Button">
-                                <rect key="frame" x="188" y="842" width="64" height="64"/>
+                                <rect key="frame" x="142.66666666666666" y="751" width="154.99999999999997" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="4DH-RN-qsq"/>
-                                    <constraint firstAttribute="width" constant="64" id="HhC-mY-k2C"/>
+                                    <constraint firstAttribute="width" constant="155" id="HhC-mY-k2C"/>
+                                    <constraint firstAttribute="width" secondItem="fmI-aa-s51" secondAttribute="height" id="Mbb-sb-IBG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Stop" imagePadding="0.0"/>
